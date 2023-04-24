@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="783.0" prefWidth="1235.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unibo.bd.view.AdminSceneController">
+   <children>
+      <Label layoutX="13.0" layoutY="44.0" prefHeight="35.0" prefWidth="288.0" text="Inserimento Dipendente Aeroporto" textOverrun="CLIP">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="airportEmployeesRole" layoutX="994.0" layoutY="716.0" promptText="Ruolo" />
+      <Label layoutX="380.0" layoutY="104.0" text="Codice" />
+      <TextField fx:id="insertAirportEmployeeName" layoutX="121.0" layoutY="140.0" />
+      <TextField fx:id="insertAirportEmployeeSurname" layoutX="121.0" layoutY="178.0" />
+      <TextField fx:id="insertAirportEmployeeCity" layoutX="121.0" layoutY="260.0" />
+      <Label layoutX="77.0" layoutY="144.0" text="Nome" />
+      <Label layoutX="60.0" layoutY="182.0" text="Cognome" />
+      <Label layoutX="74.0" layoutY="215.0" text="Genere" />
+      <Label layoutX="86.0" layoutY="264.0" text="Città" />
+      <RadioButton fx:id="insertAirportEmployeeGenderM" layoutX="145.0" layoutY="215.0" mnemonicParsing="false" text="M" />
+      <RadioButton fx:id="insertAirportEmployeeGenderF" layoutX="197.0" layoutY="215.0" mnemonicParsing="false" text="F" />
+      <TextField fx:id="insertAirportEmployeeAdress" layoutX="121.0" layoutY="300.0" />
+      <TextField fx:id="insertAirportEmployeeRole" layoutX="121.0" layoutY="340.0" />
+      <TextField fx:id="insertAirportEmployeeSpecificRole" layoutX="121.0" layoutY="381.0" />
+      <Label layoutX="67.0" layoutY="304.0" text="Indirizzo" />
+      <Label layoutX="83.0" layoutY="344.0" text="Ruolo" />
+      <Label layoutX="41.0" layoutY="381.0" text="Ruolo Interno" />
+      <Label layoutX="325.0" layoutY="51.0" text="Inserimento Compagnia Aerea">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="insertAirlineCode" layoutX="422.0" layoutY="100.0" promptText="es. ABC" />
+      <Label layoutX="75.0" layoutY="104.0" text="Codice" />
+      <TextField fx:id="insertAirlineName" layoutX="422.0" layoutY="140.0" />
+      <Label layoutX="315.0" layoutY="144.0" text="Nome compagnia" />
+      <TextField fx:id="insertAirlineHub" layoutX="422.0" layoutY="178.0" />
+      <Label layoutX="385.0" layoutY="182.0" text="Sede" />
+      <Label layoutX="385.0" layoutY="262.0" text="Inserimento nuova tassa">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="insertTaxAirlineCode" layoutX="422.0" layoutY="300.0" promptText="es. ABC" />
+      <Label layoutX="309.0" layoutY="304.0" text="Codice compagnia" />
+      <Label layoutX="316.0" layoutY="344.0" text="Data fatturazione" />
+      <Button fx:id="createAirportEmployee" layoutX="157.0" layoutY="418.0" mnemonicParsing="false" onAction="#insertAirportEmployee" text="Crea Dipendente" />
+      <Button fx:id="createAirline" layoutX="447.0" layoutY="220.0" mnemonicParsing="false" onAction="#insertAirline" text="Inserisci Compagnia" />
+      <Button fx:id="createTax" layoutX="422.0" layoutY="377.0" mnemonicParsing="false" onAction="#insertTax" text="Inserisci tassa" />
+      <Label layoutX="54.0" layoutY="475.0" text="Inserimento Manutenzione">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="insertMaintenanceID" layoutX="122.0" layoutY="516.0" promptText="es. AB01" />
+      <Label layoutX="22.0" layoutY="520.0" text="ID Manutenzione" />
+      <TextField fx:id="insertMaintenancePlaneCode" layoutX="122.0" layoutY="557.0" promptText="es. 1234" />
+      <TextField fx:id="insertMaintenanceEmployeeCode" layoutX="123.0" layoutY="599.0" />
+      <Label layoutX="47.0" layoutY="561.0" text="Codice Aereo" />
+      <Label layoutX="16.0" layoutY="603.0" text="Codice Dipendente" />
+      <Label layoutX="58.0" layoutY="642.0" text="Data inizio" />
+      <Label layoutX="65.0" layoutY="678.0" text="Data fine" />
+      <Button fx:id="createMaintenance" layoutX="128.0" layoutY="716.0" mnemonicParsing="false" onAction="#insertMaintenance" text="Inserisci Manutenzione" />
+      <TextField fx:id="billsAirlineCode" layoutX="336.0" layoutY="716.0" promptText="Codice Compagnia" />
+      <Button fx:id="billsSearch" layoutX="485.0" layoutY="716.0" mnemonicParsing="false" onAction="#showBills" text="Cerca" />
+      <Label layoutX="307.0" layoutY="475.0" text="Fatture">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="maintenanceSearch" layoutX="1126.0" layoutY="463.0" mnemonicParsing="false" onAction="#showMaintenance" text="Visualizza" />
+      <Label layoutX="756.0" layoutY="235.0" text="Manutenzioni">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="airportEmployeesSearch" layoutX="1143.0" layoutY="716.0" mnemonicParsing="false" onAction="#showAirportEmployeeTable" text="Cerca" />
+      <Label layoutX="756.0" layoutY="475.0" text="Dipendenti">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="insertAirportEmployeeCode" layoutX="121.0" layoutY="100.0" promptText="es. AA10" />
+      <Label layoutX="991.0" layoutY="41.0" text="Aeroporti Destinazione">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="destinationAirlineCode" layoutX="994.0" layoutY="220.0" promptText="Codice Compagnia" />
+      <Button fx:id="destinationSearch" layoutX="1143.0" layoutY="220.0" mnemonicParsing="false" onAction="#showDestinations" text="Cerca" />
+      <Label layoutX="618.0" layoutY="53.0" text="Voli totali aereo" />
+      <TextField fx:id="totalFlightsPlaneCode" layoutX="618.0" layoutY="76.0" prefHeight="25.0" prefWidth="107.0" promptText="Codice Aereo" />
+      <Button fx:id="totalFLightsPlaneSearch" layoutX="725.0" layoutY="76.0" mnemonicParsing="false" onAction="#countTotalFlights" text="Cerca" />
+      <Label fx:id="totalFlightsPlaneLabel" layoutX="776.0" layoutY="76.0" prefHeight="25.0" prefWidth="67.0" />
+      <Label layoutX="618.0" layoutY="113.0" text="Fatturato Totale Aeroporto" />
+      <Button fx:id="airportIncomeSearch" layoutX="618.0" layoutY="140.0" mnemonicParsing="false" onAction="#totalIncome" text="Cerca" />
+      <Label fx:id="airportIncomeLabel" layoutX="668.0" layoutY="140.0" prefHeight="25.0" prefWidth="114.0" />
+      <Label layoutX="618.0" layoutY="174.0" text="Versamento Annuale Compagnia" />
+      <TextField fx:id="airlinePaymentsCode" layoutX="618.0" layoutY="192.0" prefHeight="25.0" prefWidth="107.0" promptText="Compagnia" />
+      <Button fx:id="airlinePaymentsSearch" layoutX="725.0" layoutY="192.0" mnemonicParsing="false" onAction="#yearlyAirlinePayments" text="Cerca" />
+      <Label fx:id="airlinePaymentsLabel" layoutX="782.0" layoutY="192.0" prefHeight="25.0" prefWidth="88.0" />
+      <TextField fx:id="insertMaintenanceStartDate" layoutX="122.0" layoutY="638.0" promptText="formato dd:MM:yyyy" />
+      <TextField fx:id="insertMaintenanceFinishDate" layoutX="122.0" layoutY="674.0" promptText="formato dd:MM:yyyy" />
+      <TextField fx:id="insertTaxBillingDate" layoutX="422.0" layoutY="340.0" />
+      <TextField fx:id="airlinePaymentsYear" layoutX="618.0" layoutY="216.0" prefHeight="25.0" prefWidth="107.0" promptText="Anno" />
+      <TextArea fx:id="airportEmployeesTableID" layoutX="756.0" layoutY="520.0" prefHeight="184.0" prefWidth="73.0" />
+      <TextArea fx:id="airportEmployeesTableName" layoutX="829.0" layoutY="520.0" prefHeight="184.0" prefWidth="88.0" />
+      <TextArea fx:id="airportEmployeesTableSurname" layoutX="917.0" layoutY="520.0" prefHeight="184.0" prefWidth="88.0" />
+      <TextArea fx:id="airportEmployeesTableGender" layoutX="1005.0" layoutY="520.0" prefHeight="184.0" prefWidth="88.0" />
+      <TextArea fx:id="airportEmployeesTableCity" layoutX="1093.0" layoutY="520.0" prefHeight="184.0" prefWidth="88.0" />
+      <TextArea fx:id="taxTableAirline" layoutX="308.0" layoutY="520.0" prefHeight="184.0" prefWidth="84.0" />
+      <TextArea fx:id="taxTableBilling" layoutX="388.0" layoutY="520.0" prefHeight="184.0" prefWidth="122.0" />
+      <TextArea fx:id="taxTablePayment" layoutX="510.0" layoutY="520.0" prefHeight="184.0" prefWidth="105.0" />
+      <TextArea fx:id="taxTableAmount" layoutX="616.0" layoutY="520.0" prefHeight="184.0" prefWidth="88.0" />
+      <TextArea fx:id="maintenanceTableID" layoutX="705.0" layoutY="273.0" prefHeight="184.0" prefWidth="67.0" />
+      <TextArea fx:id="maintenanceTableAirline" layoutX="772.0" layoutY="273.0" prefHeight="184.0" prefWidth="88.0" />
+      <TextArea fx:id="maintenanceTablePlane" layoutX="860.0" layoutY="273.0" prefHeight="184.0" prefWidth="73.0" />
+      <TextArea fx:id="maintenanceTableEmployee" layoutX="934.0" layoutY="273.0" prefHeight="184.0" prefWidth="84.0" />
+      <TextArea fx:id="maintenanceTableStartDate" layoutX="1018.0" layoutY="273.0" prefHeight="184.0" prefWidth="88.0" />
+      <TextArea fx:id="maintenanceTableFinishDate" layoutX="1106.0" layoutY="273.0" prefHeight="184.0" prefWidth="88.0" />
+      <TextArea fx:id="destinationTableICAO" layoutX="994.0" layoutY="67.0" prefHeight="148.0" prefWidth="88.0" />
+      <TextArea fx:id="destinationTableCity" layoutX="1082.0" layoutY="67.0" prefHeight="148.0" prefWidth="88.0" />
+   </children>
+</Pane>

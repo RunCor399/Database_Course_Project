@@ -1,0 +1,8 @@
+Si vuole modellare in maniera semplificata un gestionale per un aeroporto, questo dovrà gestire i vari tipi di dipendenti, le compagnie aeree presenti nonchè i voli effettuati da ognuna e le tasse che dovranno versare come costo di transito.
+I voli dovranno essere storicizzati, ciascuno verrà effettuato da una compagnia specifica e da un numero definito di piloti e assistenti di volo.
+Per ogni volo dovrà inoltre essere tenuta una tabella la quale indicherà i giorni e gli orari settimanali nei quali quel volo sarà effettuato. 
+All'interno di ogni compagnia aerea saranno anche presenti i dipendenti che vi ci lavorano tra cui piloti, assistenti di volo e commerciali.  
+Si vuole inoltre includere nella progettazione un insieme di dipendenti che non afferiscono a nessuna compagnia aerea ma che sono indispensabili all'interno di questo dominio; tra questi individuiamo controllori del traffico aereo, meccanici, operai e sicurezza.
+Il software realizzato provvederà all'inserimento e alla visualizzazione dei dati filtrandoli per specifiche caratteristiche a seconda della richiesta.
+Per esempio si potrebbe richiedere lo storico dei voli effettuati da uno specifico pilota, l'ammontare mensile di tasse versato da ogni compagnia o anche il numero di passeggeri che hanno viaggiato con una compagnia in un dato intervallo di tempo. 
+ 

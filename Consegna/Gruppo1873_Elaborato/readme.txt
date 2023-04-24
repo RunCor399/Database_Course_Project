@@ -1,0 +1,3 @@
+La parte grafica dell'applicativo è stata realizzata tramite JavaFX, l'interfacciamento al DBMS MySQL avviene localmente tramite JDBC, la password per accedere al dbms locale, specificata anche nel codice, è "gestionaleAeroporto".
+
+All'avvio si potrà eseguire il login come Amministratore (non sono richieste credenziali) o come una Compagnia Aerea inserendo un codice di tre lettere (effettuare il login con AZA)

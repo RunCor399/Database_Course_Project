@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="234.0" prefWidth="499.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unibo.bd.view.AirlineLoginSceneController">
+   <children>
+      <Label layoutX="151.0" layoutY="41.0" prefHeight="35.0" prefWidth="198.0" text="Login Compagnia" textOverrun="CLIP">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginAirlineButton" layoutX="315.0" layoutY="117.0" mnemonicParsing="false" onAction="#checkAirlineCode" prefHeight="25.0" prefWidth="69.0" text="Login" />
+      <TextField fx:id="loginAirlineCode" layoutX="123.0" layoutY="117.0" prefHeight="25.0" prefWidth="192.0" promptText="Codice Compagnia es. AZA" />
+      <Label fx:id="errorLoginLabel" layoutX="123.0" layoutY="149.0" prefHeight="25.0" prefWidth="228.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
