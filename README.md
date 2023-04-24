@@ -4,6 +4,10 @@
 
 </br>
 
+## Project Report
+A comprehensive project report written in italian is available inside *Final Report* directory
+
+
 ## Project Outline
 You want to model in a simplified way a management system for an airport, this will have to manage the various types of employees, the airlines present as well as the flights made by each one and the taxes they will have to pay as a transit cost.
 The flights will have to be historicized, each will be made by a specific company and a defined number of pilots and flight attendants.
